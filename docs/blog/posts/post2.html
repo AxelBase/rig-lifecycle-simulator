@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AxelBase | Rig Lifecycle Simulator</title>
+    <link rel="icon" href="../../AxelLab-Logo.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+		<link href="../../_app/immutable/assets/0.BmlWMbjn.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/5.YeSyTMf_.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.Dreyd25B.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DBW6jkEN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DbblXhNu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Dsabm1Kp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BJZ3VAr6.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.CnynFLCO.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C7EQ5LAD.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Sk7PJEKq.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/jpXfFpd4.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DRH6BsEn.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.Dh-hAyuN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-ZcJC3-.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DCRQC5rP.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/oYXGKv2Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/u2CUfgsg.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CLgfDBZP.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/MwTxDIev.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/5.BSRs3w2T.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CgXeql78.js"><!--1apmzc4--><meta name="description" content="Dive into the core mathematics behind the Rig Lifecycle Simulator's ROI projections, including revenue from block rewards and cost deductions."/> <meta property="og:title" content="Understanding the ROI Calculation Model | Rig Lifecycle Simulator Blog"/> <meta property="og:description" content="Dive into the core mathematics behind the Rig Lifecycle Simulator's ROI projections, including revenue from block rewards and cost deductions."/> <meta property="og:url" content="../../blog/posts/post2"/> <meta property="og:type" content="article"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Understanding the ROI Calculation Model | Rig Lifecycle Simulator Blog</title>
+  </head>
+  <body data-bs-theme="light">
+    <div style="display: contents"><!--[--><!--[--><!----><header class="fixed-top p-3 w-100" style="z-index: 1050;"><nav class="container glass-card rounded-pill px-4 py-2 d-flex justify-content-between align-items-center shadow-sm"><div class="d-flex align-items-center gap-2"><a href="../../" class="d-flex align-items-center gap-2 text-decoration-none"><img src="../../AxelLab-Logo.ico" alt="AxelBase Logo" style="height: 32px;"/> <span class="fw-bold fs-5 d-none d-sm-inline" style="color: var(--primary-lilac);">AxelBase</span></a> <button class="theme-btn ms-2 svelte-12qhfyh" aria-label="Toggle dark mode"><i class="bi bi-moon-stars-fill text-primary"></i></button> <div class="position-relative ms-2"><button class="btn-coffee d-flex align-items-center gap-2 svelte-12qhfyh" aria-label="Support us"><i class="bi bi-cup-hot-fill"></i> <span class="d-none d-md-inline">Coffee</span></button> <!--[!--><!--]--></div></div> <ul class="nav d-none d-lg-flex align-items-center gap-2"><li><a class="nav-link-custom svelte-12qhfyh" href="../../">Home</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../#about">About</a></li> <li><a class="nav-link-custom svelte-12qhfyh" href="../../#faq">FAQ</a></li> <li class="ms-2"><a class="btn btn-primary btn-sm px-4" href="../../blog">Blog</a></li></ul> <button class="btn d-lg-none p-0 border-0" aria-label="Open menu" style="color: var(--primary-lilac)"><i class="bi bi-grid-fill fs-2"></i></button></nav></header> <main class="mt-5 pt-4"><!--[--><!----><div class="container fade-in post-layout svelte-1apmzc4"><div class="breadcrumbs svelte-1apmzc4"><a href="../../blog" class="svelte-1apmzc4">Blog</a> <span>/</span> <p class="svelte-1apmzc4">Understanding the ROI Calculation Model</p></div> <article class="prose svelte-1apmzc4"><h1 class="svelte-1apmzc4">Understanding the ROI Calculation Model</h1> <p class="post-meta svelte-1apmzc4">Published: December 27, 2025</p> <p class="svelte-1apmzc4">The Rig Lifecycle Simulator employs a precise mathematical model to forecast mining profitability. At its heart is the calculation of monthly revenue derived from block rewards, adjusted for network difficulty, minus ongoing electricity costs. This approach provides a clear picture of how return on investment evolves over time in a dynamic mining environment.</p> <p class="svelte-1apmzc4">Revenue begins with the rig's share of daily block rewards. With Bitcoin producing approximately 144 blocks per day and a current subsidy of 3.125 BTC per block, the total daily issuance is around 450 BTC. A rig's contribution is proportional to its hash rate relative to the entire network. For example, a 200 TH/s rig against a network difficulty of 148 trillion captures a tiny but valuable fraction, translating to significant dollar revenue when Bitcoin trades near $88,000.</p> <h2 class="svelte-1apmzc4">The Revenue Formula Explained</h2> <p class="svelte-1apmzc4">Daily rewards are computed as (rig hash rate in hashes per second divided by network difficulty) multiplied by total daily blocks and the block reward. Hash rate in TH/s is converted by multiplying by one trillion to match the scale. This yields coins earned per day, multiplied by 30 for monthly figures and then by coin price for dollar revenue.</p> <h2 class="svelte-1apmzc4">Accounting for Costs</h2> <p class="svelte-1apmzc4">Electricity costs are calculated straightforwardly: power consumption in watts divided by 1000 to kilowatts, multiplied by 24 hours, 30 days, and the user's electricity rate. This fixed monthly expense is subtracted from revenue to get net profit. Over time, as difficulty compounds monthly, revenue declines while costs remain constant, often leading to breakeven points or losses in conservative scenarios.</p> <h2 class="svelte-1apmzc4">Cumulative Profit and ROI</h2> <p class="svelte-1apmzc4">Net profits are accumulated month by month to track total earnings above costs. Final ROI is derived by subtracting the initial rig cost from cumulative profit, then dividing by the rig cost. Positive values indicate profit multiples, while negative shows loss percentages. In current conditions, efficient rigs often show extraordinary ROI due to high coin prices outweighing difficulty growth.</p> <h2 class="svelte-1apmzc4">Why This Model Matters</h2> <p class="svelte-1apmzc4">Unlike simplistic daily calculators, this monthly compounding captures real-world trends where difficulty adjustments erode margins. It helps miners anticipate when a rig pays for itself and whether it remains viable through future halvings or price fluctuations.</p> <h2 class="svelte-1apmzc4">FAQ</h2> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">How accurate is the revenue share calculation?</summary> <p class="svelte-1apmzc4">It assumes proportional reward distribution based on hash rate, matching solo mining or pool payouts before fees.</p></details> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Does it include transaction fees?</summary> <p class="svelte-1apmzc4">The model focuses on block subsidies; transaction fees can add variability but are often minor compared to the subsidy.</p></details> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Can ROI be negative?</summary> <p class="svelte-1apmzc4">Yes, if cumulative costs exceed revenue, common in high-difficulty-growth or low-price scenarios.</p></details> <p class="italic-note svelte-1apmzc4">Use the simulator to test different assumptions and refine your mining strategy.</p></article></div><!----><!--]--></main> <footer class="glass-card rounded-0 border-top py-3 mt-auto"><div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center small text-muted"><span>© 2025 AxelBase Rig Simulator</span> <div class="d-flex gap-3"><a href="../../privacy" class="footer-link svelte-12qhfyh">Privacy</a> <a href="../../terms" class="footer-link svelte-12qhfyh">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_54kdxt = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/rig-lifecycle-simulator"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.Dreyd25B.js"),
+						import("../../_app/immutable/entry/app.CnynFLCO.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
