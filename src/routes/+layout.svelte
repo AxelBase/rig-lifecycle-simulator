@@ -51,7 +51,7 @@
           aria-label="Support us"
         >
           <i class="bi bi-cup-hot-fill"></i>
-          <span class="d-none d-md-inline fw-semibold">Support</span>
+          <span class="d-none d-md-inline fw-semibold">Coffee</span>
         </button>
 
         {#if isDropdownOpen}
